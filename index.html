@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Pizza Orders</title>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <h1>Order Your Pizza</h1>
+  <form id="new-order-form">
+    <div class="form-item">
+      <label for="name">Name</label>
+      <input type="text" id="name" required/>
+    </div>
+
+    <div class="form-item">
+      <label for="address">Address</label>
+      <input type="text" id="address" required/>
+    </div>
+
+    <div class="form-item">
+      <label for="pizzatype">Select Pizza</label>
+      <select id="pizzatype">
+        <option value="Margherita">Margherita</option>
+        <option value="Pepperoni">Pepperoni</option>
+        <option value="Haiwaiian">Haiwaiian</option>
+        <option value="Peri Peri Chicken">Peri Peri Chicken</option>
+        <option value="Mushroom">Mushroom</option>
+      </select>
+    </div>
+
+    <div class="form-item">
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity">
+    </div>
+    <input type="submit" value="Place Order">
+    <button type="button" id="delete-all">Delete All</button>
+
+  </form>
+
+  <h2>Recent Orders</h2>
+  <ul id="recent-orders">
+    <li id="recent-order">
+      <p>Name: Calvin Harris</p>
+      <p>Address: 25 High Street</p>
+      <p>Order: Margherita x 1</p>
+      <button id="delete-order">Delete Order</button>
+    </li>
+
+
+    <li id="recent-order">
+      <p>Name: Calvin Harris</p>
+      <p>Address: 25 High Street</p>
+      <p>Order: Margherita x 1</p>
+      <button id="delete-order">Delete Order</button>
+    </li>
+  </ul>
+
+</body>
+</html>
